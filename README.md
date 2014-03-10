@@ -1,6 +1,6 @@
-# grunt-install-dependencies [![Build Status](https://secure.travis-ci.org/ahutchings/grunt-install-dependencies.png?branch=master)](http://travis-ci.org/ahutchings/grunt-install-dependencies)
+# grunt-update-dependencies
 
-> Install and update npm dependencies.
+> Update npm dependencies.
 
 ## Getting Started
 
@@ -9,17 +9,17 @@ This plugin requires Grunt `~0.4.0`
 Install the plugin with this command:
 
 ```shell
-npm install grunt-install-dependencies --save-dev
+npm install grunt-update-dependencies --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-install-dependencies');
+grunt.loadNpmTasks('grunt-update-dependencies');
 ```
 
 ## Install Dependencies task
-_Run this task with the `grunt install-dependencies` command._
+_Run this task with the `grunt update-dependencies` command._
 
 
 ### Settings
@@ -42,10 +42,10 @@ Show stderr in the terminal.
 Type: `Boolean`
 Default: true
 
-Instructs the install-dependencies task to fail the grunt run if an error occurs while updating dependencies.
+Instructs the update-dependencies task to fail the grunt run if an error occurs while updating dependencies.
 
 #### options.cwd
 Type: `String`
 Default: (none)  - runs in current directory
 
-Defines the working directory to run 'npm install' (relative path)
+Defines the working directory to run 'npm update' (relative path)
